@@ -17,7 +17,7 @@ object Defaultskit {
         mContext=context
     }
 
-     fun <T> preference(name: String, default: T)=Preference(name, default)
+     fun <T> preference(name: String, default: T) = Preference(name, default)
 
     class Preference<T>(val name: String, val default: T) : ReadWriteProperty<Any?, T> {
         val prefs: SharedPreferences by lazy { mContext.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE) }
