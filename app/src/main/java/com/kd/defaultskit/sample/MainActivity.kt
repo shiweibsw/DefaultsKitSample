@@ -7,12 +7,12 @@ import com.kd.defaultskit.Defaultskit
 
 class MainActivity : AppCompatActivity() {
 
-    var s:String by Defaultskit.preference("111","11")
+    var s: String by Defaultskit.preference("111", "11")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.i("MainActivity",s)
-        s="222222222"
+        Log.i("MainActivity", s)
+        s = "222222222"
     }
 }
